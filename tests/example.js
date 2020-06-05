@@ -1,3 +1,5 @@
+import { short } from "../util/utilText";
+
 describe('This is my first test \nTest001', () =>{
     it('Step: 1 - Open the browser and assert for URL and Title', () => {
         
@@ -6,7 +8,7 @@ describe('This is my first test \nTest001', () =>{
 
         //Navigate to url.
         browser.url('http://www.example.com/');
-        browser.pause(2000);
+        browser.pause(short);
 
         //assertion using wdio expect.
         expect(browser).toHaveUrl('http://www.example.com/');
