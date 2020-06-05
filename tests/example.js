@@ -1,4 +1,5 @@
 import { short } from "../util/utilText";
+import { mobile, tablet, desktop } from "../util/devices";
 
 describe('This is my first test \nTest001', () =>{
     it('Step: 1 - Open the browser and assert for URL and Title', () => {
@@ -46,6 +47,21 @@ describe('This is my first test \nTest001', () =>{
     it('step: 4 - Take screenshots', () => {
         var timestamp = new Date().getTime();
         browser.saveScreenshot('./screenshots/'+ timestamp + '.png');
+    });
+
+    it('Step: 5 - Mobile view', () => {
+        browser.setWindowSize(mobile[0], mobile[1]);
+        browser.pause(short)
+    });
+
+    it('Step: 6 - Tablet view', () => {
+        browser.setWindowSize(tablet[0], tablet[1]);
+        browser.pause(short)
+    });
+
+    it('Step: 7 - Desktop view', () => {
+        browser.setWindowSize(desktop[0], desktop[1]);
+        browser.pause(short)
     });
 
 })
