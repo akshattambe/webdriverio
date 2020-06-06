@@ -26,10 +26,8 @@ describe('E2E Tests - Pay', () => {
 		selectAccount.waitForExist()
 		selectAccount.selectByVisibleText('Loan')
         $('#sp_amount').setValue('500')
-        
-        // need to investifate on what does this call returns - dateObj.getDateInFormat()
 
-        $('#sp_date').setValue('2020-06-30');
+        $('#sp_date').setValue(dateObj.getTodaysDateInFormat());
         browser.pause(short);
 
 		$('#sp_description').setValue('Test')

@@ -1,6 +1,6 @@
 class GetTodaysDate{
     
-    getDateInFormat(){
+    getTodaysDateInFormat(){
         const dt = new Date();
 
         var dd = dt.getDate();    
@@ -17,6 +17,7 @@ class GetTodaysDate{
         } 
         var today = yyyy+'-'+mm+'-'+dd;
         console.log(today);
+        return today;
     }
 }
 
