@@ -1,7 +1,7 @@
 import { short } from "../util/utilText";
 import { mobile, tablet, desktop } from "../util/devices";
 
-describe('This is my first test \nTest001', () =>{
+describe('This is my first test: Test001', () =>{
     it('Step: 1 - Open the browser and assert for URL and Title', () => {
         
         //Setting up window size.

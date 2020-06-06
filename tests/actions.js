@@ -2,7 +2,7 @@ import { short, waitForSec } from "../util/utilText";
 
 describe('Browser Actions', () => {
     
-    it('Browser Action:  setValue, addValue(), clearValue()', () => {
+    it('Browser Action: Test002 - setValue, addValue(), clearValue()', () => {
         const newUrl = 'https://devexpress.github.io/testcafe/example/';
         browser.url(newUrl);
         const input = $('#developer-name');
