@@ -2,7 +2,7 @@ import { short, waitForSec } from "../util/utilText";
 
 describe('Browser Actions', () => {
     
-    it('Inputs', () => {
+    it('Browser Action:  setValue, addValue(), clearValue()', () => {
         const newUrl = 'https://devexpress.github.io/testcafe/example/';
         browser.url(newUrl);
         const input = $('#developer-name');
@@ -13,4 +13,11 @@ describe('Browser Actions', () => {
         input.clearValue();
         browser.pause(waitForSec);
     });
+
+    it('Select dropdown: ', () => {
+        const dd = $('#preferred-interface')
+        dd.waitForExist();
+        dd.selectByVisibleText('JavaScript API');
+        browser.pause(short);
+    })
 });
