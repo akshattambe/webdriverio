@@ -1,4 +1,4 @@
-import { short, waitForSec } from "../util/utilText";
+import { short, waitForSec } from "../../util/utilText";
 
 describe('Browser Actions', () => {
     

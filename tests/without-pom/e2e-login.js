@@ -1,4 +1,4 @@
-import { maximize } from "../util/devices";
+import { maximize } from "../../util/devices";
 
 describe('E2E Tests - Login / Logout Flow', () => {
     it('Should not login with invalid credentials', () => {

@@ -1,5 +1,5 @@
-import { short } from "../util/utilText";
-import { mobile, tablet, desktop } from "../util/devices";
+import { short } from "../../util/utilText";
+import { mobile, tablet, desktop } from "../../util/devices";
 
 describe('This is my first test: Test001', () =>{
     it('Step: 1 - Open the browser and assert for URL and Title', () => {

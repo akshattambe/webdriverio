@@ -1,6 +1,6 @@
-import { maximize } from "../util/devices";
-import { short } from "../util/utilText";
-const DateClass = require('../util/utilMethods');
+import { maximize } from "../../util/devices";
+import { short } from "../../util/utilText";
+const DateClass = require('../../util/utilMethods');
 const dateObj = new DateClass();
 
 

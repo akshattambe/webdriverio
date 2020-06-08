@@ -1,0 +1,55 @@
+import Base from '../Base';
+
+class LoginPage extends Base {
+    get loginForm(){
+        return $('#login_form');
+    }
+
+    get usernameInput(){
+        return $('#user_login');
+    }
+
+    get passwordInput(){
+        return $('#user_password');
+    }
+
+    get submitButton(){
+        return $('input[type="submit"]');
+    }
+
+    get signInButton(){
+        return $('#signin_button');
+    }
+
+    get logoutIcon(){
+        return $('.icon-user');
+    }
+
+    get logoutLink(){
+        return $('#logout_link');
+    }
+
+    get errorMessage(){
+        return $('.alert-error');
+    }
+
+    login(username, password){
+        this.loginForm.waitForExist();
+        this.usernameInput.setValue(username);
+        this.passwordInput.setValue(password);
+        this.submitButton.click();
+    }
+
+    clickSignInButton(){
+        this.signInButton.waitForExist();
+        this.signInButton.click();
+    }
+
+    logout(){
+        this.logoutIcon.click();
+        this.logoutLink.waitForExist();
+        this.logoutLink.click();
+    }
+}
+
+export default new LoginPage();

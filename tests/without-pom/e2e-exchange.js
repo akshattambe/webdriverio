@@ -1,4 +1,4 @@
-import { maximize } from "../util/devices";
+import { maximize } from "../../util/devices";
 import {describe} from "mocha";
 
 describe('E2E Tests - Currency Exchange', () => {
